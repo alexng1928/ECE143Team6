@@ -160,7 +160,7 @@ def scrapeAndInitializeList(link):
     return returnTupleListToStringList(cleanedDepartmentalCourseList)
 
 # IMPORTANT: Each list is exactly named after a department and contains string elements that quote the entire row
-# format: courseName, term, enroll#, evals made, recommend class%, recommend prof%, hrs/wk, GPA expected, GPA received 
+# format: courseName, isSummer, term, enroll#, evals made, recommend class%, recommend prof%, hrs/wk, GPA expected, GPA received 
 # sry i kept row as an entire string and didn't break each row up into different data-type, leaving it to you 
 # instead of individual departments, we could analyze 3 area studies (engineering, humanities, socialSciences)
 # each area study list is a concatenation of the 5 most popular departments within that area study
