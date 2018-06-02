@@ -6,7 +6,7 @@ def make_pandas(fname):
     Arguments:
         fname {string} -- the csv files with CAPE data
     """
-    assert fname == 'engineering.txt' or 'humanities.txt' or 'socialSciences.txt' or 'aggregateUCSD.txt', "Not a correct input file"
+    assert fname == 'engineering.txt' or 'humanities.txt' or 'socialSciences.txt' or 'ucsd.txt', "Not a correct input file"
     colNames = ['Course Name', 'Summer?', 'Term', 'Enrolled', 'Evals Made', 'Recommend Class %', 'Recommend Prof %', 'Hrs/Week', 'GPA Expected', 'GPA Recieved']
     data = pd.read_csv(fname, names = colNames)
     data.apply(pd.to_numeric, errors='ignore')
