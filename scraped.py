@@ -189,7 +189,7 @@ PSYC = scrapeAndInitializeList('https://cape.ucsd.edu/responses/Results.aspx?Nam
 MGT = scrapeAndInitializeList('https://cape.ucsd.edu/responses/Results.aspx?Name=&CourseNumber=mgt')
 socialSciences = ECON + POLI + COGS + PSYC + MGT
 
-aggregateUCSD= engineering+humanities+socialSciences
+ucsd= engineering+humanities+socialSciences
 
 # print engineering and create txt file
 engineeringFile = open('engineering.txt', 'wb')
@@ -209,11 +209,11 @@ for item in socialSciences:
     socialSciencesFile.write("%s\n" % item)
 # prettyPrintList(socialSciences)
 
-# print aggregateUCSD and create txt file
-aggregateUCSdFile = open('aggregateUCSD.txt', 'wb')
-for item in aggregateUCSD:
-    aggregateUCSdFile.write("%s\n" % item)
-#prettyPrintList(aggregateUCSD)
+# print ucsd and create txt file
+ucsdFile = open('ucsd.txt', 'wb')
+for item in ucsd:
+    ucsdFile.write("%s\n" % item)
+#prettyPrintList(ucsd)
 
 
 
