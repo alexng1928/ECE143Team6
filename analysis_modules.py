@@ -54,7 +54,7 @@ def df_trim_term(data, summer, year):
         summer {bool} -- True if summer courses, False if non-summer courses
         year {str} -- Year desired
     """
-    assert year == 'all' or '07' or '08' or '09' or '10' or '11' or '12' or '13' or '14' or '15' or '16' or '17' or '18', "Possible Years: 07-18"
+    assert year == 'all' or '11' or '12' or '13' or '14' or '15' or '16' or '17', "Possible Years: 11-17"
     assert isinstance(data, pd.DataFrame), 'Given Data is not a Pandas DataFrame'
     assert isinstance(summer, bool), 'Incorrect Parameter (Boolean): Determines summer or non-summer courses'
     if year == 'all' and summer:
