@@ -7,7 +7,7 @@ def make_pandas(fname):
         fname {string} -- the csv files with CAPE data
     """
     assert fname == 'engineering.txt' or 'humanities.txt' or 'socialSciences.txt' or 'ucsd.txt', "Not a correct input file"
-    colNames = ['Course Name', 'Summer?', 'Term', 'Enrolled', 'Evals Made', 'Recommend Class %', 'Recommend Prof %', 'Hrs/Week', 'GPA Expected', 'GPA Recieved']
+    colNames = ['Course Name', 'Summer?', 'Term', 'Enrolled', 'Evals Made', 'Recommend Class %', 'Recommend Prof %', 'Hrs/Week', 'GPA Expected', 'GPA Received']
     data = pd.read_csv(fname, names = colNames)
     data.apply(pd.to_numeric, errors='ignore')
     return data
@@ -22,13 +22,13 @@ def average_GPA(data, summer = True, year = 'all', expected = False):
     Keyword Arguments:
         summer {bool} -- True if average from summer courses, False if non-summer courses (default: {True})
         year {str} -- Year of GPA average desired (default: {'all'})
-        expected {bool} -- True if expected GPA, False if recieved GPA (default: {False})
+        expected {bool} -- True if expected GPA, False if Received GPA (default: {False})
     """
 
     temp = df_trim_term(data, summer, year)
     if expected:
         return temp["GPA Expected"].mean()
-    return temp["GPA Recieved"].mean()
+    return temp["GPA Received"].mean()
 
 def average_enrollment(data, summer = True, year = 'all'):
     """Returns the average enrollment number from all summer or non-summer courses. Can be cumulative or only courses from a certain year.
