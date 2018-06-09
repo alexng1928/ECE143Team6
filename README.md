@@ -1,4 +1,7 @@
 ## ECE 143 Team 6 - UCSD Summer Session Analytics 
+
+# File Descriptions
+
 scraped.py - python file containing methods and commands for scraping data from CAPE
 
 ECE143_BarGraph.ipynb	 - notebook containing bar graphs and regression statistics
