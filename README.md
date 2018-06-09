@@ -2,6 +2,8 @@
 
 # File Descriptions
 
+ECE 143 Proposal.docx - project proposal
+
 scraped.py - python file containing methods and commands for scraping data from CAPE
 
 ECE143_BarGraph.ipynb	 - notebook containing bar graphs and regression statistics
