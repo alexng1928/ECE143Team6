@@ -2,7 +2,7 @@
 
 # File Descriptions
 
-https://drive.google.com/open?id=1DrWtNaKqb0ZNoMJsh0YZOGfO8tBRX7joxILNLumiOMY - presentation link
+presentation link: https://drive.google.com/open?id=1DrWtNaKqb0ZNoMJsh0YZOGfO8tBRX7joxILNLumiOMY
 
 ECE 143 Proposal.docx - project proposal
 
